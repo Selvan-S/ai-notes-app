@@ -55,6 +55,7 @@ export function SigninForm() {
           error.message.includes("InvalidSecret"))
       ) {
         form.setError("root", {
+          type: "manual",
           message: "Invalid credentials",
         });
       } else {
